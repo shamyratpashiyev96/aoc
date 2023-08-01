@@ -1,33 +1,112 @@
-main .main__banner_wrapper {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: -1;
-  justify-content: center; }
-  main .main__banner_wrapper > img {
+main {
+  align-items: center; }
+  main .main__banner_wrapper {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: bottom; }
-  main .main__banner_wrapper .main__upper_layer {
-    position: absolute;
-    top: 0;
-    width: var(--default_width);
-    height: 100%; }
-    main .main__banner_wrapper .main__upper_layer .main__logo_wrapper_1 {
+    position: relative;
+    z-index: -1;
+    justify-content: center; }
+    main .main__banner_wrapper > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: bottom; }
+    main .main__banner_wrapper .main__upper_layer {
       position: absolute;
-      top: 28%;
-      font-size: 29px;
-      color: var(--banner_text_blue);
-      background-color: rgba(255, 255, 255, 0.8);
-      box-sizing: border-box;
-      padding: 35px 20px;
-      border-radius: 15px;
-      text-transform: uppercase; }
-    main .main__banner_wrapper .main__upper_layer .main__logo_wrapper_2 {
-      position: absolute;
-      align-items: center;
-      top: 15%;
-      right: 0;
-      color: var(--default_white);
-      font-size: 20px; }
+      top: 0;
+      width: var(--default_width);
+      height: 100%; }
+      main .main__banner_wrapper .main__upper_layer .main__logo_wrapper_1 {
+        position: absolute;
+        top: 28%;
+        font-size: 29px;
+        color: var(--banner_text_blue);
+        background-color: rgba(255, 255, 255, 0.8);
+        box-sizing: border-box;
+        padding: 35px 20px;
+        border-radius: 15px;
+        text-transform: uppercase; }
+      main .main__banner_wrapper .main__upper_layer .main__logo_wrapper_2 {
+        position: absolute;
+        align-items: center;
+        top: 15%;
+        right: 0;
+        color: var(--default_white);
+        font-size: 20px; }
+  main .main__inner_wrapper {
+    width: var(--default_width); }
+    main .main__inner_wrapper section.flipcards {
+      width: 100%;
+      margin: 50px 0; }
+      main .main__inner_wrapper section.flipcards .flipcards__row {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 40px; }
+        main .main__inner_wrapper section.flipcards .flipcards__row .flipcards__flipcard_container {
+          width: 700px;
+          height: 460px;
+          position: relative;
+          transition: all 0.7s ease-in;
+          -webkit-perspective: 1600px;
+          perspective: 1600px;
+          flex-shrink: 0; }
+          main .main__inner_wrapper section.flipcards .flipcards__row .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper {
+            transition: inherit;
+            width: 100%;
+            height: 100%;
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d; }
+            main .main__inner_wrapper section.flipcards .flipcards__row .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper .flipcards__front_side, main .main__inner_wrapper section.flipcards .flipcards__row .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper .flipcards__back_side {
+              position: absolute;
+              backface-visibility: hidden;
+              -webkit-backface-visibility: hidden;
+              width: 100%;
+              height: 100%;
+              box-sizing: border-box;
+              overflow: hidden;
+              border-radius: 15px; }
+            main .main__inner_wrapper section.flipcards .flipcards__row .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper .flipcards__front_side .flipcards__flipcard_title {
+              position: absolute;
+              width: 100%;
+              bottom: 0;
+              left: 0;
+              z-index: 11;
+              font-size: 30px;
+              background: linear-gradient(rgba(0, 40, 141, 0.5), rgba(0, 122, 235, 0.5));
+              color: var(--default_white);
+              box-sizing: border-box;
+              padding: 20px; }
+            main .main__inner_wrapper section.flipcards .flipcards__row .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper .flipcards__back_side {
+              -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+              justify-content: space-between; }
+              main .main__inner_wrapper section.flipcards .flipcards__row .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper .flipcards__back_side .flipcards__flipcard_title {
+                position: absolute;
+                width: 100%;
+                top: 0;
+                left: 0;
+                z-index: 11;
+                font-size: 30px;
+                color: var(--default_white);
+                box-sizing: border-box;
+                padding: 30px;
+                margin: 0; }
+              main .main__inner_wrapper section.flipcards .flipcards__row .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper .flipcards__back_side .flipcards__flipcard_description {
+                position: absolute;
+                width: 100%;
+                top: 15%;
+                left: 0;
+                z-index: 11;
+                font-size: 20px;
+                color: var(--default_white);
+                box-sizing: border-box;
+                padding: 30px;
+                justify-content: space-between; }
+                main .main__inner_wrapper section.flipcards .flipcards__row .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper .flipcards__back_side .flipcards__flipcard_description .bold {
+                  font-weight: bold; }
+          main .main__inner_wrapper section.flipcards .flipcards__row .flipcards__flipcard_container:hover .flipcards__flipcard_inner_wrapper, main .main__inner_wrapper section.flipcards .flipcards__row .flipcards__flipcard_container:hover .flipcards__flipcard_inner_wrapper .flipcards__back_side {
+            -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg); }
+          main .main__inner_wrapper section.flipcards .flipcards__row .flipcards__flipcard_container img {
+            width: 100%;
+            height: 100%; }
