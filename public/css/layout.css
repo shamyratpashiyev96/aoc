@@ -42,7 +42,9 @@ header {
 footer {
   justify-content: center;
   background-color: var(--background_blue);
-  width: 100%; }
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 0; }
   footer .footer__inner_wrapper {
     width: var(--default_width);
     align-items: center;
