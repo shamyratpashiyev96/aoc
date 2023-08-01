@@ -1,0 +1,33 @@
+main .main__banner_wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: -1;
+  justify-content: center; }
+  main .main__banner_wrapper > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom; }
+  main .main__banner_wrapper .main__upper_layer {
+    position: absolute;
+    top: 0;
+    width: var(--default_width);
+    height: 100%; }
+    main .main__banner_wrapper .main__upper_layer .main__logo_wrapper_1 {
+      position: absolute;
+      top: 28%;
+      font-size: 29px;
+      color: var(--banner_text_blue);
+      background-color: rgba(255, 255, 255, 0.8);
+      box-sizing: border-box;
+      padding: 35px 20px;
+      border-radius: 15px;
+      text-transform: uppercase; }
+    main .main__banner_wrapper .main__upper_layer .main__logo_wrapper_2 {
+      position: absolute;
+      align-items: center;
+      top: 15%;
+      right: 0;
+      color: var(--default_white);
+      font-size: 20px; }

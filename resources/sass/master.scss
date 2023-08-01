@@ -1,0 +1,46 @@
+@font-face {
+    font-family: GilroyRegular;
+    src: url(/fonts/Gilroy-Regular.ttf) format("truetype")
+}
+@font-face {
+    font-family: GilroyMedium;
+    src: url(/fonts/Gilroy-Medium.ttf) format("truetype")
+}
+@font-face {
+    font-family: GilroyBold;
+    src: url(/fonts/Gilroy-Bold.ttf) format("truetype")
+}
+@font-face {
+    font-family: GilroyExtraBold;
+    src: url(/fonts/Gilroy-ExtraBold.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: BabasNeueRegular;
+    src: url(/fonts/BebasNeue-Regular.ttf) format("truetype")
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'BabasNeueRegular';
+}
+
+body{
+    --default_width: 1440px;
+    --text_black_default: #000;
+    --default_white: #fff;
+    --background_blue: #0061bb;
+    --banner_text_blue: #0085ff;
+}
+
+.flex_row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex_col {
+    display: flex;
+    flex-direction: column;
+}
