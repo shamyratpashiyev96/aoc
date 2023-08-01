@@ -134,3 +134,24 @@ main {
       main section.about_us .about_us__inner_wrapper .about_us__text_block {
         text-align: center;
         color: var(--default_white); }
+  main section.gallery {
+    width: 100%;
+    justify-content: center;
+    margin: 50px 0; }
+    main section.gallery .gallery__inner_wrapper {
+      width: var(--default_width); }
+      main section.gallery .gallery__inner_wrapper .gallery__title {
+        font-size: 30px;
+        color: var(--banner_text_blue); }
+      main section.gallery .gallery__inner_wrapper .gallery__images_row {
+        flex-wrap: wrap;
+        row-gap: 25px;
+        justify-content: space-between; }
+        main section.gallery .gallery__inner_wrapper .gallery__images_row .small {
+          width: 335px;
+          height: 225px;
+          flex-shrink: 0; }
+        main section.gallery .gallery__inner_wrapper .gallery__images_row .big {
+          width: 455px;
+          height: 300px;
+          flex-shrink: 0; }

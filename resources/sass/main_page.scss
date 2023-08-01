@@ -44,7 +44,6 @@ main{
         }
     }
 
-
     section.flipcards{
         width: 100%;
         margin: 50px 0;
@@ -189,6 +188,39 @@ main{
             .about_us__text_block{
                 text-align: center;
                 color: var(--default_white);
+            }
+        }
+    }
+
+    section.gallery {
+        width: 100%;
+        justify-content: center;
+        margin: 50px 0;
+
+        .gallery__inner_wrapper{
+            width: var(--default_width);
+
+            .gallery__title{
+                font-size: 30px;
+                color: var(--banner_text_blue);
+            }
+
+            .gallery__images_row{
+                flex-wrap: wrap;
+                row-gap: 25px;
+                justify-content: space-between;
+
+                .small{
+                    width: 335px;
+                    height: 225px;
+                    flex-shrink: 0;
+                }
+
+                .big{
+                    width: 455px;
+                    height: 300px;
+                    flex-shrink: 0;
+                }
             }
         }
     }
