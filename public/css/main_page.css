@@ -33,80 +33,104 @@ main {
         right: 0;
         color: var(--default_white);
         font-size: 20px; }
-  main .main__inner_wrapper {
-    width: var(--default_width); }
-    main .main__inner_wrapper section.flipcards {
-      width: 100%;
-      margin: 50px 0; }
-      main .main__inner_wrapper section.flipcards .flipcards__row {
-        justify-content: space-between;
-        flex-wrap: wrap;
-        row-gap: 40px; }
-        main .main__inner_wrapper section.flipcards .flipcards__row .flipcards__flipcard_container {
-          width: 700px;
-          height: 460px;
-          position: relative;
-          transition: all 0.7s ease-in;
-          -webkit-perspective: 1600px;
-          perspective: 1600px;
-          flex-shrink: 0; }
-          main .main__inner_wrapper section.flipcards .flipcards__row .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper {
-            transition: inherit;
+  main section.flipcards {
+    width: 100%;
+    margin: 50px 0;
+    justify-content: center; }
+    main section.flipcards .flipcards__inner_wrapper {
+      justify-content: space-between;
+      flex-wrap: wrap;
+      row-gap: 40px;
+      width: var(--default_width); }
+      main section.flipcards .flipcards__inner_wrapper .flipcards__flipcard_container {
+        width: 700px;
+        height: 460px;
+        position: relative;
+        transition: all 0.7s ease-in;
+        -webkit-perspective: 1600px;
+        perspective: 1600px;
+        flex-shrink: 0; }
+        main section.flipcards .flipcards__inner_wrapper .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper {
+          transition: inherit;
+          width: 100%;
+          height: 100%;
+          -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d; }
+          main section.flipcards .flipcards__inner_wrapper .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper .flipcards__front_side, main section.flipcards .flipcards__inner_wrapper .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper .flipcards__back_side {
+            position: absolute;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
             width: 100%;
             height: 100%;
-            -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d; }
-            main .main__inner_wrapper section.flipcards .flipcards__row .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper .flipcards__front_side, main .main__inner_wrapper section.flipcards .flipcards__row .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper .flipcards__back_side {
+            box-sizing: border-box;
+            overflow: hidden;
+            border-radius: 15px; }
+          main section.flipcards .flipcards__inner_wrapper .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper .flipcards__front_side .flipcards__flipcard_title {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            z-index: 11;
+            font-size: 30px;
+            background: linear-gradient(rgba(0, 40, 141, 0.5), rgba(0, 122, 235, 0.5));
+            color: var(--default_white);
+            box-sizing: border-box;
+            padding: 20px; }
+          main section.flipcards .flipcards__inner_wrapper .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper .flipcards__back_side {
+            -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+            justify-content: space-between; }
+            main section.flipcards .flipcards__inner_wrapper .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper .flipcards__back_side .flipcards__flipcard_title {
               position: absolute;
-              backface-visibility: hidden;
-              -webkit-backface-visibility: hidden;
               width: 100%;
-              height: 100%;
-              box-sizing: border-box;
-              overflow: hidden;
-              border-radius: 15px; }
-            main .main__inner_wrapper section.flipcards .flipcards__row .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper .flipcards__front_side .flipcards__flipcard_title {
-              position: absolute;
-              width: 100%;
-              bottom: 0;
+              top: 0;
               left: 0;
               z-index: 11;
               font-size: 30px;
-              background: linear-gradient(rgba(0, 40, 141, 0.5), rgba(0, 122, 235, 0.5));
               color: var(--default_white);
               box-sizing: border-box;
-              padding: 20px; }
-            main .main__inner_wrapper section.flipcards .flipcards__row .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper .flipcards__back_side {
-              -webkit-transform: rotateY(180deg);
-              transform: rotateY(180deg);
+              padding: 30px;
+              margin: 0; }
+            main section.flipcards .flipcards__inner_wrapper .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper .flipcards__back_side .flipcards__flipcard_description {
+              position: absolute;
+              width: 100%;
+              top: 15%;
+              left: 0;
+              z-index: 11;
+              font-size: 20px;
+              color: var(--default_white);
+              box-sizing: border-box;
+              padding: 30px;
               justify-content: space-between; }
-              main .main__inner_wrapper section.flipcards .flipcards__row .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper .flipcards__back_side .flipcards__flipcard_title {
-                position: absolute;
-                width: 100%;
-                top: 0;
-                left: 0;
-                z-index: 11;
-                font-size: 30px;
-                color: var(--default_white);
-                box-sizing: border-box;
-                padding: 30px;
-                margin: 0; }
-              main .main__inner_wrapper section.flipcards .flipcards__row .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper .flipcards__back_side .flipcards__flipcard_description {
-                position: absolute;
-                width: 100%;
-                top: 15%;
-                left: 0;
-                z-index: 11;
-                font-size: 20px;
-                color: var(--default_white);
-                box-sizing: border-box;
-                padding: 30px;
-                justify-content: space-between; }
-                main .main__inner_wrapper section.flipcards .flipcards__row .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper .flipcards__back_side .flipcards__flipcard_description .bold {
-                  font-weight: bold; }
-          main .main__inner_wrapper section.flipcards .flipcards__row .flipcards__flipcard_container:hover .flipcards__flipcard_inner_wrapper, main .main__inner_wrapper section.flipcards .flipcards__row .flipcards__flipcard_container:hover .flipcards__flipcard_inner_wrapper .flipcards__back_side {
-            -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg); }
-          main .main__inner_wrapper section.flipcards .flipcards__row .flipcards__flipcard_container img {
-            width: 100%;
-            height: 100%; }
+              main section.flipcards .flipcards__inner_wrapper .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper .flipcards__back_side .flipcards__flipcard_description .bold {
+                font-weight: bold; }
+        main section.flipcards .flipcards__inner_wrapper .flipcards__flipcard_container:hover .flipcards__flipcard_inner_wrapper, main section.flipcards .flipcards__inner_wrapper .flipcards__flipcard_container:hover .flipcards__flipcard_inner_wrapper .flipcards__back_side {
+          -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg); }
+        main section.flipcards .flipcards__inner_wrapper .flipcards__flipcard_container img {
+          width: 100%;
+          height: 100%; }
+  main section.about_us {
+    margin: 50px 0;
+    background-image: url("/img/about_us_background.png");
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 40px 0; }
+    main section.about_us .about_us__inner_wrapper {
+      width: var(--default_width);
+      row-gap: 30px; }
+      main section.about_us .about_us__inner_wrapper .about_us__title {
+        color: var(--default_white);
+        font-size: 30px;
+        margin: 0; }
+      main section.about_us .about_us__inner_wrapper .about_us__images_row {
+        justify-content: space-between; }
+        main section.about_us .about_us__inner_wrapper .about_us__images_row img {
+          width: 450px;
+          height: 300px; }
+      main section.about_us .about_us__inner_wrapper .about_us__text_block {
+        text-align: center;
+        color: var(--default_white); }
