@@ -58,7 +58,8 @@ main.single_news_page {
           row-gap: 10px;
           position: relative;
           box-sizing: border-box;
-          padding: 0 0 10px 0; }
+          padding: 0 0 10px 0;
+          text-decoration: none; }
           main.single_news_page .single_news_page__inner_wrapper .single_news_page__page_content_row .single_news_page__similar_news_column .single_news_page__similar_news_container .single_news_page__similar_news_date {
             font-size: 14px;
             font-family: 'GilroyRegular', sans-serif;

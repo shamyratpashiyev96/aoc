@@ -20,9 +20,9 @@ class NewsFactory extends Factory
             'title_tm' => 'tm_' . fake()->paragraph(),
             'title_ru' => 'ru_' . fake()->paragraph(),
             'title_en' => 'en_' . fake()->paragraph(),
-            'description_tm' => 'tm_' . fake()->realTextBetween(500,700),
-            'description_ru' => 'ru_' . fake()->realTextBetween(500,700),
-            'description_en' => 'en_' . fake()->realTextBetween(500,700),
+            'description_tm' => 'tm_' . fake()->realTextBetween(5000,6000),
+            'description_ru' => 'ru_' . fake()->realTextBetween(5000,6000),
+            'description_en' => 'en_' . fake()->realTextBetween(5000,6000),
             'image' => 'img/news_medium_' . fake()->randomDigit() . '.jpg',
         ];
     }

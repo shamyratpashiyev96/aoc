@@ -4,31 +4,47 @@ namespace App\Http\Controllers;
 
 use App\Models\News;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 
 class SiteController extends Controller
 {
-    public function index(){
-        return view('index');
+    public function index($lang){
+      $this->localize($lang);
+      $this->news_4 = News::orderBy('created_at', 'DESC')->limit(4)->get();
+
+      return view('index', $this->data);
     }
 
-    public function news($page_num=1){
-        $news_all = News::orderBy('created_at', 'DESC')->get();
-        $items_per_page = 12;
-        $pages_total = ceil($news_all->count() / $items_per_page);
-        $this->current_page = $page_num;
-        $this->news_current_page = $news_all->slice(($items_per_page * $page_num) - $items_per_page , $items_per_page);
-        $this->pagination_array = $this->paginate($page_num, $pages_total);
-        $this->prev_page = $page_num > 1 ? $page_num - 1 : 1;
-        $this->next_page = $page_num < $pages_total ? $page_num + 1 : $page_num;
-        if($page_num > $pages_total){
-            return abort(404);
-        }
-        return view('news_page', $this->data);
+    public function news($lang,$page_num=1){
+      $this->localize($lang);
+      $news_all = News::orderBy('created_at', 'DESC')->get();
+      $page_num = intval($page_num);
+      $items_per_page = 12;
+      $pages_total = ceil($news_all->count() / $items_per_page);
+      $this->current_page = $page_num;
+      $this->news_current_page = $news_all->slice(($items_per_page * $page_num) - $items_per_page , $items_per_page);
+      $this->pagination_array = $this->paginate($page_num, $pages_total);
+      $this->prev_page = $page_num > 1 ? $page_num - 1 : 1;
+      $this->next_page = $page_num < $pages_total ? $page_num + 1 : $page_num;
+      if($page_num > $pages_total){
+          return abort(404);
+      }
+      return view('news_page', $this->data);
     }
 
-    public function single_news(){
-        return view('single_news_page');
+    public function single_news($lang, $id){
+      $this->localize($lang);
+      $this->item_id = $id;
+      $this->selected_news = News::findOrFail($id);
+      $this->related_news = News::whereNot('id', $id)->orderBy('created_at', 'DESC')->limit(6)->get();
+      return view('single_news_page', $this->data);
     }
+
+    public function localize($lang){
+      App::setLocale($lang);
+    }
+
+
 
     public function paginate($currentPage, $pagesTotal) {
         
