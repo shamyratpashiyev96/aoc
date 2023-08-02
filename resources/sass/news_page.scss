@@ -1,0 +1,22 @@
+main.news_page{
+    justify-content: center;
+    width: 100%;
+    margin: 140px 0 50px 0;
+
+    .news_page__inner_wrapper{
+        width: var(--default_width);
+
+        .news_page__title{
+            margin: 0 0 20px 0;
+            font-size: 30px;
+            color: var(--banner_text_blue);
+        }
+
+        .news_page__news_row{
+            justify-content: space-between;
+            width: 100%;
+            flex-wrap: wrap;
+            row-gap: 25px;
+        }
+    }
+}

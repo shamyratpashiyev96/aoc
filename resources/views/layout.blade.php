@@ -18,9 +18,9 @@
             </a>
 
             <div class="header__nav_block flex_row">
-                <a href="#" class="header__nav_link">Главная</a>
+                <a href="{{ route('main_page') }}" class="header__nav_link">Главная</a>
                 <a href="#" class="header__nav_link">О нас</a>
-                <a href="#" class="header__nav_link">Новости</a>
+                <a href="{{ route('news_page') }}" class="header__nav_link">Новости</a>
                 <a href="#" class="header__nav_link">Галерея</a>
                 <a href="#" class="header__nav_link">Контакты</a>
             </div>
