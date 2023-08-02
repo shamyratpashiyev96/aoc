@@ -28,16 +28,17 @@ header {
       header .header__inner_wrapper .header__logo_block .header__logo_text {
         margin: 0;
         text-transform: uppercase;
-        font-size: 22px;
-        letter-spacing: 1.5px;
-        font-family: 'BabasNeueLight', sans-serif; }
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-family: 'BabasNeueRegular', sans-serif;
+        line-height: 120%; }
     header .header__inner_wrapper .header__nav_block {
       column-gap: 40px;
       position: absolute; }
       header .header__inner_wrapper .header__nav_block .header__nav_link {
         text-decoration: none;
         color: var(--default_white);
-        font-size: 21px;
+        font-size: 20px;
         text-transform: uppercase; }
     header .header__inner_wrapper .header__langs_block {
       column-gap: 10px;
@@ -68,17 +69,19 @@ footer {
       footer .footer__inner_wrapper .footer__logo_row .footer__logo_text {
         margin: 0;
         text-transform: uppercase;
-        font-size: 22px;
+        font-size: 20px;
         color: var(--default_white);
         letter-spacing: 1.5px;
-        font-family: 'BabasNeueLight', sans-serif; }
+        font-family: 'BabasNeueLight', sans-serif;
+        line-height: 120%;
+        letter-spacing: 1px; }
     footer .footer__inner_wrapper .footer__nav_row {
       column-gap: 40px;
       justify-content: center; }
       footer .footer__inner_wrapper .footer__nav_row .footer__nav_link {
         color: var(--default_white);
         text-decoration: none;
-        font-size: 21px;
+        font-size: 20px;
         text-transform: uppercase; }
     footer .footer__inner_wrapper .footer__contacts_row {
       column-gap: 60px;
@@ -89,7 +92,7 @@ footer {
         footer .footer__inner_wrapper .footer__contacts_row .footer__key_value_wrapper .footer__key, footer .footer__inner_wrapper .footer__contacts_row .footer__key_value_wrapper .footer__value {
           color: var(--default_white);
           text-decoration: none;
-          font-size: 21px;
+          font-size: 20px;
           text-transform: uppercase; }
     footer .footer__inner_wrapper .footer__copyright_text {
       text-transform: uppercase;

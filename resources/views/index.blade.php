@@ -59,7 +59,7 @@
 
                     <div class="flipcards__back_side">
                         <img src="{{ asset('img/flip_card_2.jpg') }}" alt="">
-                        <h2 class="flipcards__flipcard_title">ОБ ОЛИМПИЙСКОМ ГОРОДКЕ</h2>
+                        <h2 class="flipcards__flipcard_title">Спортивные комлексы</h2>
                         <div class="flipcards__flipcard_description flex_row">
                             <div class="flipcards__left_column flex_col">
                                 <span class="bold">Объект</span>
@@ -75,15 +75,15 @@
                             </div>
                             <div class="flipcards__right_column flex_col">
                                 <span class="bold">Вместимость</span>
-                                <span>100</span>
-                                <span>100</span>
-                                <span>100</span>
-                                <span>100</span>
-                                <span>100</span>
-                                <span>100</span>
-                                <span>100</span>
-                                <span>100</span>
-                                <span>100</span>
+                                <span>4500</span>
+                                <span>6000</span>
+                                <span>5000</span>
+                                <span>5000</span>
+                                <span>3000</span>
+                                <span>4000</span>
+                                <span>5000</span>
+                                <span>700</span>
+                                <span>15 000</span>
                             </div>
                         </div>
                     </div>
@@ -102,15 +102,16 @@
                     <div class="flipcards__back_side">
                         <img src="{{ asset('img/flip_card_3.jpg') }}" alt="">
                         <h2 class="flipcards__flipcard_title">ОТЕЛИ</h2>
-                        <div class="flipcards__flipcard_description flex_column">
+                        <div class="flipcards__flipcard_description flex_col">
                             <span class="bold">Отель “Олимпия” вместимость 450</span>
                             <p>
                                 Президентский люкс - 1; Стандартный одноместный номер - 136; Стандартный двухместный номер - 36; люкс - 45; апартаменты - 5; номера для людей с ограниченными возможностями - 2; 5 зал для конференции - 114; 2 ресторана - 256; бар -58; лаудж бар - 71; кондитерская - 45; СПА центр
                             </p>
-                                <span class="bold">Отель “Спорт” вместимость 450</span>
-                                <p>
+                            <hr/>
+                            <span class="bold">Отель “Спорт” вместимость 450</span>
+                            <p>
                                 Президентский люкс - 2; Стандартный одноместный номер - 228; Стандартный двухместный номер - 108; люкс - 48; апартаменты - 64; номера для людей с ограниченными возможностями - 8; зал для конференции - 700; 4 ресторана - 1030; 2 кафе - 178; СПА центр
-                                </p>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -128,15 +129,16 @@
                     <div class="flipcards__back_side">
                         <img src="{{ asset('img/flip_card_4.jpg') }}" alt="">
                         <h2 class="flipcards__flipcard_title">ИНФРАСТРУКТУРА</h2>
-                        <div class="flipcards__flipcard_description flex_column">
+                        <div class="flipcards__flipcard_description flex_col">
                             <span class="bold">Монорельс длина - 5 138 метров</span>
                             <p>
                                 Высота от 6 до 13 метров; 8 станций; вместимость одного поезда 70 человек; скорость движения 46км/ч (максимальная 70 км/ч);
                             </p>
-                                <span class="bold">Медицинский восстановительный центр</span>
-                                <p>
+                            <hr />
+                            <span class="bold">Медицинский восстановительный центр</span>
+                            <p>
                                 МРТ; УЗИ; ЭКГ; рефлексотерапия; вакуумная терапия; гальвано терапия; физиотерапия; электротерапия; допплерография. Лаборатория; гимнастический зал; 8 палат; 1 массажный кабинет; 1 бассейн; 1 кафе.
-                                </p>
+                            </p>
                         </div>
                     </div>
                 </div>

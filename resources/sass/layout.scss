@@ -33,9 +33,10 @@ header{
             .header__logo_text{
                 margin: 0;
                 text-transform: uppercase;
-                font-size: 22px;
-                letter-spacing: 1.5px;
-                font-family: 'BabasNeueLight', sans-serif;
+                font-size: 20px;
+                letter-spacing: 1px;
+                font-family: 'BabasNeueRegular', sans-serif;
+                line-height: 120%;
             }
         }
 
@@ -46,7 +47,7 @@ header{
             .header__nav_link{
                 text-decoration: none;
                 color: var(--default_white);
-                font-size: 21px;
+                font-size: 20px;
                 text-transform: uppercase;
             }
         }
@@ -90,10 +91,12 @@ footer{
             .footer__logo_text{
                 margin: 0;
                 text-transform: uppercase;
-                font-size: 22px;
+                font-size: 20px;
                 color: var(--default_white);
                 letter-spacing: 1.5px;
                 font-family: 'BabasNeueLight', sans-serif;
+                line-height: 120%;
+                letter-spacing: 1px;
             }
         }
 
@@ -104,7 +107,7 @@ footer{
             .footer__nav_link{
                 color: var(--default_white);
                 text-decoration: none;
-                font-size: 21px;
+                font-size: 20px;
                 text-transform: uppercase;
             }
         }
@@ -120,7 +123,7 @@ footer{
                 .footer__key, .footer__value{
                     color: var(--default_white);
                     text-decoration: none;
-                    font-size: 21px;
+                    font-size: 20px;
                     text-transform: uppercase;
                 }
             }

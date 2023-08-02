@@ -13,4 +13,8 @@ class SiteController extends Controller
     public function news(){
         return view('news_page');
     }
+
+    public function single_news(){
+        return view('single_news_page');
+    }
 }

@@ -1,3 +1,7 @@
+header{
+    background-color: var(--banner_text_blue);
+}
+
 main.news_page{
     justify-content: center;
     width: 100%;
@@ -8,7 +12,7 @@ main.news_page{
 
         .news_page__title{
             margin: 0 0 20px 0;
-            font-size: 30px;
+            font-size: 50px;
             color: var(--banner_text_blue);
         }
 
