@@ -7,6 +7,10 @@
     src: url(/fonts/Gilroy-Medium.ttf) format("truetype")
 }
 @font-face {
+    font-family: GilroySemiBold;
+    src: url(/fonts/Gilroy-SemiBold.ttf) format("truetype")
+}
+@font-face {
     font-family: GilroyBold;
     src: url(/fonts/Gilroy-Bold.ttf) format("truetype")
 }
@@ -33,6 +37,7 @@ body{
     --default_white: #fff;
     --background_blue: #0061bb;
     --banner_text_blue: #0085ff;
+    --text_gray: #a3a3a3;
 }
 
 .flex_row {
@@ -43,4 +48,67 @@ body{
 .flex_col {
     display: flex;
     flex-direction: column;
+}
+
+.news_container{
+    width: 340px;
+    height: 390px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    flex-shrink: 0;
+    text-decoration: none;
+    color: var(--text_black_default);
+
+    .image_wrapper{
+        width: 100%;
+        height: 210px;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .content_wrapper{
+        box-sizing: border-box;
+        padding: 10px;
+        width: 100%;
+        height: -webkit-fill-available;
+        height: -moz-available;
+        height: -ms-available;
+        justify-content: space-between;
+
+        .title, .description{
+            line-clamp: 2;
+            -webkit-line-clamp: 2;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+        }
+
+        .title{
+            font-size: 18px;
+            font-family: 'GilroySemiBold', sans-serif;
+            margin: 0;
+        }
+
+        .description{
+            font-size: 15px;
+            font-family: 'GilroyRegular', sans-serif;
+            line-clamp: 4;
+            -webkit-line-clamp: 4;
+
+            p{
+                margin: 0;
+            }
+        }
+
+        .date{
+            font-size: 12px;
+            font-family: 'GilroyRegular', sans-serif;
+            color: var(--text_gray);
+        }
+    }
 }

@@ -11,15 +11,19 @@ header{
     .header__inner_wrapper{
         width: var(--default_width);
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         box-sizing: border-box;
         padding: 20px 0;
+        position: relative;
+        height: 90px;
 
         .header__logo_block{
             align-items: center;
             column-gap: 15px;
             text-decoration: none;
             color: var(--default_white);
+            position: absolute;
+            left: 0;
 
             .header__logo_img{
                 width: 50px;
@@ -29,24 +33,26 @@ header{
             .header__logo_text{
                 margin: 0;
                 text-transform: uppercase;
-                font-size: 16px;
+                font-size: 22px;
             }
         }
 
         .header__nav_block{
             column-gap: 40px;
-            margin-left: -15%;
+            position: absolute;
 
             .header__nav_link{
                 text-decoration: none;
                 color: var(--default_white);
-                font-size: 16px;
+                font-size: 21px;
                 text-transform: uppercase;
             }
         }
 
         .header__langs_block{
             column-gap: 10px;
+            position: absolute;
+            right: 0;
 
             .header__lang_flag{
                 width: 38px;
@@ -82,7 +88,7 @@ footer{
             .footer__logo_text{
                 margin: 0;
                 text-transform: uppercase;
-                font-size: 16px;
+                font-size: 22px;
                 color: var(--default_white);
             }
         }
@@ -94,7 +100,7 @@ footer{
             .footer__nav_link{
                 color: var(--default_white);
                 text-decoration: none;
-                font-size: 16px;
+                font-size: 21px;
                 text-transform: uppercase;
             }
         }
@@ -107,10 +113,10 @@ footer{
                 align-items: center;
                 column-gap: 5px;
 
-                .footer__key,.footer__value{
+                .footer__key, .footer__value{
                     color: var(--default_white);
                     text-decoration: none;
-                    font-size: 16px;
+                    font-size: 21px;
                     text-transform: uppercase;
                 }
             }

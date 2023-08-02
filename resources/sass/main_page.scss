@@ -203,6 +203,7 @@ main{
             .gallery__title{
                 font-size: 30px;
                 color: var(--banner_text_blue);
+                margin: 0 0 20px 0;
             }
 
             .gallery__images_row{
@@ -221,6 +222,27 @@ main{
                     height: 300px;
                     flex-shrink: 0;
                 }
+            }
+        }
+    }
+
+    section.news{
+        margin: 50px 0;
+        width: 100%;
+        justify-content: center;
+
+        .news__section_title{
+            font-size: 30px;
+            color: var(--banner_text_blue);
+            margin: 0 0 20px 0;
+        }
+
+        .news__inner_wrapper{
+            width: var(--default_width);
+
+            .news__news_row{
+                justify-content: space-between;
+
             }
         }
     }

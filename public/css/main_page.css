@@ -142,7 +142,8 @@ main {
       width: var(--default_width); }
       main section.gallery .gallery__inner_wrapper .gallery__title {
         font-size: 30px;
-        color: var(--banner_text_blue); }
+        color: var(--banner_text_blue);
+        margin: 0 0 20px 0; }
       main section.gallery .gallery__inner_wrapper .gallery__images_row {
         flex-wrap: wrap;
         row-gap: 25px;
@@ -155,3 +156,15 @@ main {
           width: 455px;
           height: 300px;
           flex-shrink: 0; }
+  main section.news {
+    margin: 50px 0;
+    width: 100%;
+    justify-content: center; }
+    main section.news .news__section_title {
+      font-size: 30px;
+      color: var(--banner_text_blue);
+      margin: 0 0 20px 0; }
+    main section.news .news__inner_wrapper {
+      width: var(--default_width); }
+      main section.news .news__inner_wrapper .news__news_row {
+        justify-content: space-between; }
