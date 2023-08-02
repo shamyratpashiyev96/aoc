@@ -93,3 +93,22 @@ body {
       font-size: 12px;
       font-family: 'GilroyRegular', sans-serif;
       color: var(--text_gray); }
+
+.pagination_row {
+  column-gap: 15px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 37px;
+  width: 100%; }
+  .pagination_row svg {
+    width: 24px;
+    height: 24px; }
+    .pagination_row svg path {
+      fill: var(--text_gray); }
+  .pagination_row .item {
+    font-family: 'GilroyMedium', sans-serif;
+    font-size: 18px;
+    color: var(--text_gray);
+    text-decoration: none; }
+    .pagination_row .item.active {
+      color: var(--banner_text_blue); }

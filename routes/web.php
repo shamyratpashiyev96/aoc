@@ -1,7 +1,9 @@
 <?php
 
-use App\Http\Controllers\SiteController;
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\SiteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,5 +17,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [SiteController::class, 'index'])->name('main_page');
-Route::get('/news', [SiteController::class, 'news'])->name('news_page');
-Route::get('/single-news', [SiteController::class, 'single_news'])->name('single_news_page');
+Route::get('/news/{page_num?}', [SiteController::class, 'news'])->name('news_page');
+Route::get('/single-news/{id}', [SiteController::class, 'single_news'])->name('single_news_page');
+
+Route::get('login',[AuthController::class, 'login'])->name('login');
+Route::post('login-post',[AuthController::class, 'loginPost'])->name('loginPost');
+Route::get('logout',[AuthController::class, 'logout'])->name('logout');
+
+
+Route::group(['prefix'=>'adminpanel','middleware'=>'auth'], function(){
+    Route::resource('news', AdminController::class);
+});

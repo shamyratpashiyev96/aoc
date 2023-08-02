@@ -117,3 +117,31 @@ body{
         }
     }
 }
+
+.pagination_row{
+    column-gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 37px;
+    width: 100%;
+
+    svg{
+        width: 24px;
+        height: 24px;
+
+        path{
+            fill: var(--text_gray);
+        }
+    }
+
+    .item{
+        font-family: 'GilroyMedium', sans-serif;
+        font-size: 18px;
+        color: var(--text_gray);
+        text-decoration: none;
+
+        &.active{
+            color: var(--banner_text_blue);
+        }
+    }
+}
