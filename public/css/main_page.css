@@ -98,7 +98,6 @@ main {
               box-sizing: border-box;
               padding: 0 30px;
               margin: 30px 0 35px 0;
-              font-family: 'GilroySemiBold';
               text-transform: uppercase; }
             main section.flipcards .flipcards__inner_wrapper .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper .flipcards__back_side .flipcards__flipcard_description {
               width: 100%;
@@ -136,6 +135,15 @@ main {
         main section.flipcards .flipcards__inner_wrapper .flipcards__flipcard_container img {
           width: 100%;
           height: 100%; }
+    @media (max-width: 1500px) {
+      main section.flipcards .flipcards__inner_wrapper .flipcards__flipcard_container {
+        width: 49%;
+        height: calc(100vw / 3 - 30px); }
+        main section.flipcards .flipcards__inner_wrapper .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper .flipcards__back_side .flipcards__flipcard_title {
+          margin: 30px 0 15px 0;
+          font-size: 26px; }
+        main section.flipcards .flipcards__inner_wrapper .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper .flipcards__back_side .flipcards__flipcard_description {
+          font-size: calc(100vw / 79); } }
   main section.about_us {
     margin: 50px 0;
     background-image: url("/img/about_us_background.png");
@@ -153,7 +161,8 @@ main {
         font-size: 50px;
         margin: 0; }
       main section.about_us .about_us__inner_wrapper .about_us__images_row {
-        justify-content: space-between; }
+        justify-content: space-between;
+        flex-wrap: wrap; }
         main section.about_us .about_us__inner_wrapper .about_us__images_row img {
           width: 450px;
           height: 300px; }
@@ -164,6 +173,10 @@ main {
         font-family: 'GilroyRegular', sans-serif;
         line-height: 140%;
         letter-spacing: 0.4px; }
+    @media (max-width: 1500px) {
+      main section.about_us .about_us__inner_wrapper .about_us__images_row img {
+        width: 32%;
+        height: max-content; } }
   main section.gallery {
     width: 100%;
     justify-content: center;
@@ -186,6 +199,13 @@ main {
           width: 455px;
           height: 300px;
           flex-shrink: 0; }
+    @media (max-width: 1500px) {
+      main section.gallery .gallery__inner_wrapper .gallery__images_row .small {
+        width: 24.5%;
+        height: max-content; }
+      main section.gallery .gallery__inner_wrapper .gallery__images_row .big {
+        width: 32.5%;
+        height: max-content; } }
   main section.news {
     margin: 50px 0;
     width: 100%;
@@ -197,4 +217,8 @@ main {
     main section.news .news__inner_wrapper {
       width: var(--default_width); }
       main section.news .news__inner_wrapper .news__news_row {
-        justify-content: space-between; }
+        justify-content: space-between;
+        flex-wrap: wrap; }
+    @media (max-width: 1500px) {
+      main section.news .news__inner_wrapper .news__news_row .news_container:last-child {
+        display: none; } }

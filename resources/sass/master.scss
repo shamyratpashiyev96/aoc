@@ -145,3 +145,9 @@ body{
         }
     }
 }
+
+@media(max-width: 1500px){
+    body{
+        --default_width: 95vw;
+    }
+}

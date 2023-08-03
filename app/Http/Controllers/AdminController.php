@@ -39,6 +39,7 @@ class AdminController extends Controller
             'description_tm' => 'required',
             'description_ru' => 'required',
             'description_en' => 'required',
+            'event_date' => 'required|date',
             'image' => 'required',
         ]);
 
@@ -49,6 +50,7 @@ class AdminController extends Controller
         $news->description_tm = $request->description_tm;
         $news->description_ru = $request->description_ru;
         $news->description_en = $request->description_en;
+        $news->event_date = $request->event_date;
 
         if($request->hasFile('image')){
             $news->image = $request->file('image')->store('uploaded_images');
@@ -88,7 +90,7 @@ class AdminController extends Controller
             'description_tm' => 'required',
             'description_ru' => 'required',
             'description_en' => 'required',
-            'image' => 'required',
+            'event_date' => 'required|date',
         ]);
         $selected_news = News::findOrFail($id);
         $selected_news->title_tm = $request->title_tm;
@@ -97,6 +99,8 @@ class AdminController extends Controller
         $selected_news->description_tm = $request->description_tm;
         $selected_news->description_ru = $request->description_ru;
         $selected_news->description_en = $request->description_en;
+        $selected_news->event_date = $request->event_date;
+
 
         if ($request->hasFile('image')) {
             File::delete($selected_news->image);

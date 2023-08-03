@@ -24,6 +24,7 @@ class NewsFactory extends Factory
             'description_ru' => 'ru_' . fake()->realTextBetween(5000,6000),
             'description_en' => 'en_' . fake()->realTextBetween(5000,6000),
             'image' => 'img/news_medium_' . fake()->randomDigit() . '.jpg',
+            'event_date' => fake()->dateTime(),
         ];
     }
 }

@@ -112,3 +112,7 @@ body {
     text-decoration: none; }
     .pagination_row .item.active {
       color: var(--banner_text_blue); }
+
+@media (max-width: 1500px) {
+  body {
+    --default_width: 95vw; } }

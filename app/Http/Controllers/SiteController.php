@@ -41,6 +41,9 @@ class SiteController extends Controller
     }
 
     public function localize($lang){
+      if(!in_array($lang, ['tm', 'ru', 'en'])){
+        return abort(404);
+      }
       App::setLocale($lang);
     }
 

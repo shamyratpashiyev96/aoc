@@ -126,7 +126,6 @@ main{
                             box-sizing: border-box;
                             padding: 0 30px;
                             margin: 30px 0 35px 0;
-                            font-family: 'GilroySemiBold';
                             text-transform: uppercase;
                         }
 
@@ -188,6 +187,31 @@ main{
                 }
             }
         }
+
+        @media(max-width:1500px){
+            .flipcards__inner_wrapper{
+
+                .flipcards__flipcard_container{
+                    width: 49%;
+                    height: calc(100vw / 3 - 30px);
+
+                    .flipcards__flipcard_inner_wrapper{
+
+                        .flipcards__back_side{
+
+                            .flipcards__flipcard_title{
+                                margin: 30px 0 15px 0;
+                                font-size: 26px;
+                            }
+
+                            .flipcards__flipcard_description{
+                                font-size: calc(100vw / 79);
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     section.about_us{
@@ -212,6 +236,7 @@ main{
 
             .about_us__images_row{
                 justify-content: space-between;
+                flex-wrap: wrap;
 
                 img{
                     width: 450px;
@@ -226,6 +251,21 @@ main{
                 font-family: 'GilroyRegular', sans-serif;
                 line-height: 140%;
                 letter-spacing: 0.4px;
+            }
+        }
+
+        @media(max-width: 1500px){
+            
+            .about_us__inner_wrapper{
+
+                .about_us__images_row{
+
+                    img{
+                        width: 32%;
+                        height: max-content;
+                    }
+                    
+                }                
             }
         }
     }
@@ -262,6 +302,24 @@ main{
                 }
             }
         }
+
+        @media(max-width: 1500px){
+            .gallery__inner_wrapper{
+
+                .gallery__images_row{
+
+                    .small{
+                        width: 24.5%;
+                        height: max-content;
+                    }
+
+                    .big{
+                        width: 32.5%;
+                        height: max-content;
+                    }
+                }
+            }
+        }
     }
 
     section.news{
@@ -280,7 +338,20 @@ main{
 
             .news__news_row{
                 justify-content: space-between;
+                flex-wrap: wrap;
+            }
+        }
 
+        @media(max-width: 1500px){
+
+            .news__inner_wrapper{
+
+                .news__news_row{
+
+                    .news_container:last-child{
+                        display: none;
+                    }
+                }                
             }
         }
     }

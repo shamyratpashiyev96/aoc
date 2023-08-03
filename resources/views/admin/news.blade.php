@@ -47,7 +47,7 @@
                                             {!! \Illuminate\Support\Str::limit($news->description_tm, 50, $end='...') !!}
                                         </td>
                                         <td>
-                                            {{date_format($news->created_at,'d.m.Y')}}
+                                            {{ date('d.m.Y', strtotime($news->event_date)) }}
                                         </td>
                                         <td>
                                             <img src="{{ asset($news->image) }}" alt="image">

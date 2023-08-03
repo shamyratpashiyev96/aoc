@@ -63,6 +63,10 @@
                                 </span>
                             </div>
                         </div>
+                        <div class="form-group col-6">
+                            <label>Senesi</label>
+                            <input type="date" name="event_date" style="border: 1px solid #e8ebf1; font-weight: 400; font-size: 0.875rem; margin-left:10px;">
+                        </div>
                         <button type="submit" class="btn btn-primary mr-2">Döret</button>
                     </form>
                 </div>
