@@ -601,15 +601,5 @@ main{
             }
         }
 
-        @media(max-width: 400px){
-
-            .news__inner_wrapper{
-
-                .news_container{
-                    width: 90vw;
-                    // height: calc(100vw * 1.5);
-                }
-            }
-        }
     }
 }

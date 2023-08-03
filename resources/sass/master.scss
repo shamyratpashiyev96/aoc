@@ -118,6 +118,10 @@ body{
             color: var(--text_gray);
         }
     }
+
+    @media(max-width: 400px){
+        width: 90vw;
+    }
 }
 
 .pagination_row{

@@ -6,12 +6,12 @@
 @section('content')
 <main class="single_news_page flex_row">
     <div class="single_news_page__inner_wrapper flex_col">
-        <div class="single_news_page__breadcrumbs_row flex_row">
-            <span>Главная</span>
-            <span>></span>
-            <span>Новости</span>
-            <span>></span>
-            <span>aergea</span>
+        <div class="single_news_page__breadcrumbs_row">
+            <a href="{{ route('main_page', ['lang'=>app()->getLocale()]) }}">@lang('app.layout.main_page')</a>
+            <span>&nbsp;>&nbsp;</span>
+            <a href="{{ route('news_page', ['lang'=>app()->getLocale()]) }}">@lang('app.layout.news_page')</a>
+            <span>&nbsp;>&nbsp;</span>
+            <a href="{{ request()->fullUrl() }}">{{ Str::limit($selected_news->{'title_' . app()->getLocale()}, $limit = 50, $end = '...') }}</a>
         </div>
         <div class="single_news_page__page_content_row flex_row">
             <div class="single_news_page__news_content_column flex_col">
@@ -21,7 +21,7 @@
                 </div>
 
                 <div class="single_news_page__news_text_block">
-                    <span class="single_news_page__news_date">20.06.2023</span>
+                    <span class="single_news_page__news_date">{{ date('d.m.Y', strtotime($selected_news->event_date)) }}</span>
                     <h2 class="single_news_page__news_title">
                         {{ $selected_news->{'title_' . app()->getLocale()} }}
                     </h2>

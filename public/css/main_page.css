@@ -320,6 +320,3 @@ main {
     @media (max-width: 650px) {
       main section.news .news__inner_wrapper .news__section_title {
         font-size: calc(100vw / 15); } }
-    @media (max-width: 400px) {
-      main section.news .news__inner_wrapper .news_container {
-        width: 90vw; } }

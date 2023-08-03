@@ -94,6 +94,9 @@ body {
       font-size: 12px;
       font-family: 'GilroyRegular', sans-serif;
       color: var(--text_gray); }
+  @media (max-width: 400px) {
+    .news_container {
+      width: 90vw; } }
 
 .pagination_row {
   column-gap: 15px;
