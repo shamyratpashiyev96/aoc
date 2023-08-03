@@ -180,6 +180,18 @@ header{
 
     }
 
+    @media(max-width: 1350px) {
+        .header__inner_wrapper{
+
+            .header__logo_block{
+
+                .header__logo_text{
+                    max-width: 79%;
+                }
+            }
+        }
+    }
+
     @media(max-width: 1149px){
 
         .header__inner_wrapper{
@@ -196,6 +208,31 @@ header{
         .header__hamburger_menu{
             display: flex;
             left: 100%;
+        }
+    }
+
+    @media(max-width: 400px){
+        .header__inner_wrapper{
+
+            .header__logo_block{
+
+                .header__logo_text{
+                    max-width: 67%;
+                    font-size: 18px;
+                }
+            }
+        } 
+
+        .header__hamburger_menu{
+            .header__hamburger_menu_inner_wrapper{
+
+                .header__logo_block{
+
+                    .header__logo_text{
+                        font-size: 18px;
+                    }
+                }
+            }
         }
     }
 }
@@ -268,6 +305,29 @@ footer{
             text-transform: uppercase;
             font-size: 16px;
             color: var(--default_white);
+        }
+    }
+
+    @media(max-width: 650px){
+        .footer__inner_wrapper{
+
+            .footer__logo_row{
+                flex-direction: column;
+                text-align: center;
+                row-gap: 10px;
+            }
+
+            .footer__nav_row{
+                flex-direction: column;
+                text-align: center;
+                row-gap: 15px;
+            }
+
+            .footer__contacts_row{
+                flex-direction: column;
+                text-align: center;
+                row-gap: 15px;
+            }
         }
     }
 }
