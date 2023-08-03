@@ -150,7 +150,7 @@
                                 {{ $news->{'title_' . app()->getLocale()} }}
                             </div>
                             <div class="description">
-                                {{ $news->{'description_' . app()->getLocale()} }}
+                                {!! $news->{'description_' . app()->getLocale()} !!}
                             </div>
                             <span class="date">{{ date('d.m.Y', strtotime($news->created_at)) }}</span>
                         </div>

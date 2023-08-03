@@ -44,6 +44,28 @@ main{
                 font-size: 20px;
             }
         }
+
+        @media(max-width: 1150px) {
+            .main__upper_layer{
+
+                .main__logo_wrapper_1{
+                    font-size: 35px;
+                }
+            }
+        }
+
+        @media(max-width: 799px) {
+            .main__upper_layer{
+
+                .main__logo_wrapper_1{
+                    font-size: 28px;
+                }
+
+                .main__logo_wrapper_2{
+                    top: 8%;
+                }
+            }
+        }
     }
 
     section.flipcards{
@@ -193,7 +215,7 @@ main{
 
                 .flipcards__flipcard_container{
                     width: 49%;
-                    height: calc(100vw / 3 - 30px);
+                    height: calc(100vw / 3 - 15px);
 
                     .flipcards__flipcard_inner_wrapper{
 
@@ -206,6 +228,43 @@ main{
 
                             .flipcards__flipcard_description{
                                 font-size: calc(100vw / 79);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @media(max-width:1050px){
+            .flipcards__inner_wrapper{
+                justify-content: center;
+
+                .flipcards__flipcard_container{
+                    width: 600px;
+                    height: 400px;
+
+                    .flipcards__flipcard_inner_wrapper{
+
+                        .flipcards__front_side{
+
+                            .flipcards__flipcard_title{
+                                font-size: 27px;
+                            }
+                        }
+
+                        .flipcards__back_side{
+
+                            .flipcards__flipcard_title{
+                                margin: 30px 0 15px 0;
+                                font-size: 24px;
+                            }
+
+                            .flipcards__flipcard_description{
+                                font-size: 17px;
+
+                                .bold{
+                                    margin-bottom: 5px;
+                                }
                             }
                         }
                     }
@@ -268,6 +327,36 @@ main{
                 }                
             }
         }
+
+        @media(max-width: 1150px){
+
+            .about_us__inner_wrapper{
+
+                .about_us__text_block{
+                    font-size: 19px;
+                }
+            }
+        }
+
+        @media(max-width: 799px){
+            .about_us__inner_wrapper{
+
+                .about_us__title{
+                    font-size: 45px;
+                }
+
+                .about_us__images_row{
+                    justify-content: space-around;
+                    row-gap: 15px;
+
+                    img{
+                        width: 48.5%;
+                        height: max-content;
+                    }
+                    
+                }                
+            }
+        }
     }
 
     section.gallery {
@@ -320,6 +409,34 @@ main{
                 }
             }
         }
+
+        @media(max-width: 1050px){
+            .gallery__inner_wrapper{
+
+                .gallery__images_row{
+                    justify-content: space-around;
+
+                    .small{
+                        width: 49%;
+                        height: max-content;
+                    }
+
+                    .big{
+                        width: 49%;
+                        height: max-content;
+                    }
+                }
+            }
+        }
+
+        @media(max-width: 799px){
+            .gallery__inner_wrapper{
+
+                .gallery__title{
+                    font-size: 45px;
+                }
+            }
+        }
     }
 
     section.news{
@@ -352,6 +469,29 @@ main{
                         display: none;
                     }
                 }                
+            }
+        }
+
+        @media(max-width: 1099px){
+
+            .news__inner_wrapper{
+
+                .news__news_row{
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
+                    column-gap: 20px;
+                    row-gap: 30px;
+
+                    .news_container:last-child{
+                        display: flex;
+                    }
+                }                
+            }
+        }
+
+        @media(max-width: 799px){
+            .news__section_title{
+                font-size: 45px;
             }
         }
     }

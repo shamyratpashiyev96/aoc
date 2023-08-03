@@ -35,6 +35,14 @@ main {
         right: 0;
         color: var(--default_white);
         font-size: 20px; }
+    @media (max-width: 1150px) {
+      main .main__banner_wrapper .main__upper_layer .main__logo_wrapper_1 {
+        font-size: 35px; } }
+    @media (max-width: 799px) {
+      main .main__banner_wrapper .main__upper_layer .main__logo_wrapper_1 {
+        font-size: 28px; }
+      main .main__banner_wrapper .main__upper_layer .main__logo_wrapper_2 {
+        top: 8%; } }
   main section.flipcards {
     width: 100%;
     margin: 50px 0;
@@ -138,12 +146,27 @@ main {
     @media (max-width: 1500px) {
       main section.flipcards .flipcards__inner_wrapper .flipcards__flipcard_container {
         width: 49%;
-        height: calc(100vw / 3 - 30px); }
+        height: calc(100vw / 3 - 15px); }
         main section.flipcards .flipcards__inner_wrapper .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper .flipcards__back_side .flipcards__flipcard_title {
           margin: 30px 0 15px 0;
           font-size: 26px; }
         main section.flipcards .flipcards__inner_wrapper .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper .flipcards__back_side .flipcards__flipcard_description {
           font-size: calc(100vw / 79); } }
+    @media (max-width: 1050px) {
+      main section.flipcards .flipcards__inner_wrapper {
+        justify-content: center; }
+        main section.flipcards .flipcards__inner_wrapper .flipcards__flipcard_container {
+          width: 600px;
+          height: 400px; }
+          main section.flipcards .flipcards__inner_wrapper .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper .flipcards__front_side .flipcards__flipcard_title {
+            font-size: 27px; }
+          main section.flipcards .flipcards__inner_wrapper .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper .flipcards__back_side .flipcards__flipcard_title {
+            margin: 30px 0 15px 0;
+            font-size: 24px; }
+          main section.flipcards .flipcards__inner_wrapper .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper .flipcards__back_side .flipcards__flipcard_description {
+            font-size: 17px; }
+            main section.flipcards .flipcards__inner_wrapper .flipcards__flipcard_container .flipcards__flipcard_inner_wrapper .flipcards__back_side .flipcards__flipcard_description .bold {
+              margin-bottom: 5px; } }
   main section.about_us {
     margin: 50px 0;
     background-image: url("/img/about_us_background.png");
@@ -177,6 +200,18 @@ main {
       main section.about_us .about_us__inner_wrapper .about_us__images_row img {
         width: 32%;
         height: max-content; } }
+    @media (max-width: 1150px) {
+      main section.about_us .about_us__inner_wrapper .about_us__text_block {
+        font-size: 19px; } }
+    @media (max-width: 799px) {
+      main section.about_us .about_us__inner_wrapper .about_us__title {
+        font-size: 45px; }
+      main section.about_us .about_us__inner_wrapper .about_us__images_row {
+        justify-content: space-around;
+        row-gap: 15px; }
+        main section.about_us .about_us__inner_wrapper .about_us__images_row img {
+          width: 48.5%;
+          height: max-content; } }
   main section.gallery {
     width: 100%;
     justify-content: center;
@@ -206,6 +241,18 @@ main {
       main section.gallery .gallery__inner_wrapper .gallery__images_row .big {
         width: 32.5%;
         height: max-content; } }
+    @media (max-width: 1050px) {
+      main section.gallery .gallery__inner_wrapper .gallery__images_row {
+        justify-content: space-around; }
+        main section.gallery .gallery__inner_wrapper .gallery__images_row .small {
+          width: 49%;
+          height: max-content; }
+        main section.gallery .gallery__inner_wrapper .gallery__images_row .big {
+          width: 49%;
+          height: max-content; } }
+    @media (max-width: 799px) {
+      main section.gallery .gallery__inner_wrapper .gallery__title {
+        font-size: 45px; } }
   main section.news {
     margin: 50px 0;
     width: 100%;
@@ -222,3 +269,14 @@ main {
     @media (max-width: 1500px) {
       main section.news .news__inner_wrapper .news__news_row .news_container:last-child {
         display: none; } }
+    @media (max-width: 1099px) {
+      main section.news .news__inner_wrapper .news__news_row {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 30px; }
+        main section.news .news__inner_wrapper .news__news_row .news_container:last-child {
+          display: flex; } }
+    @media (max-width: 799px) {
+      main section.news .news__section_title {
+        font-size: 45px; } }
