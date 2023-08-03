@@ -7,7 +7,7 @@
     
 <main class="news_page flex_row">
     <div class="news_page__inner_wrapper">
-        <h2 class="news_page__title">Новости</h2>
+        <h2 class="news_page__title">@lang('app.main_page.news_section')</h2>
 
         <div class="news_page__news_row flex_row">
             @foreach ($news_current_page as $news)

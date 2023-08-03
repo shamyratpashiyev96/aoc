@@ -19,23 +19,23 @@
 
             <div class="header__nav_block flex_row">
                 <a href="{{ route('main_page',app()->getLocale()) }}" class="header__nav_link">@lang('app.layout.main_page')</a>
-                <a href="#" class="header__nav_link">@lang('app.layout.about_us_page')</a>
+                <a href="{{ route('main_page',app()->getLocale()) }}#about_us_section" class="header__nav_link">@lang('app.layout.about_us_page')</a>
                 <a href="{{ route('news_page',app()->getLocale()) }}" class="header__nav_link">@lang('app.layout.news_page')</a>
-                <a href="#" class="header__nav_link">@lang('app.layout.gallery_page')</a>
-                <a href="#" class="header__nav_link">@lang('app.layout.contacts_page')</a>
+                <a href="{{ route('main_page',app()->getLocale()) }}#gallery_section" class="header__nav_link">@lang('app.layout.gallery_page')</a>
+                <a href="{{ route('main_page',app()->getLocale()) }}#footer_section" class="header__nav_link">@lang('app.layout.contacts_page')</a>
             </div>
 
             <div class="header__langs_block flex_row">
                 <a href="{{ isset($item_id) ? route(Route::currentRouteName(),['lang'=>'tm','id'=>$item_id]) : route(Route::currentRouteName(),['lang'=>'tm']) }}"><img class="header__lang_flag" src="{{ asset('icons/tm.svg') }}" alt=""></a>
-                <a href="{{ isset($item_id) ? route(Route::currentRouteName(),['lang'=>'tm','id'=>$item_id]) : route(Route::currentRouteName(),['lang'=>'tm']) }}"><img class="header__lang_flag" src="{{ asset('icons/ru.svg') }}" alt=""></a>
-                <a href="{{ isset($item_id) ? route(Route::currentRouteName(),['lang'=>'tm','id'=>$item_id]) : route(Route::currentRouteName(),['lang'=>'tm']) }}"><img class="header__lang_flag" src="{{ asset('icons/en.svg') }}" alt=""></a>
+                <a href="{{ isset($item_id) ? route(Route::currentRouteName(),['lang'=>'ru','id'=>$item_id]) : route(Route::currentRouteName(),['lang'=>'ru']) }}"><img class="header__lang_flag" src="{{ asset('icons/ru.svg') }}" alt=""></a>
+                <a href="{{ isset($item_id) ? route(Route::currentRouteName(),['lang'=>'en','id'=>$item_id]) : route(Route::currentRouteName(),['lang'=>'en']) }}"><img class="header__lang_flag" src="{{ asset('icons/en.svg') }}" alt=""></a>
             </div>
         </div>
     </header>
 
     @yield('content')
 
-    <footer class="flex_row">
+    <footer class="flex_row" id="footer_section">
         <div class="footer__inner_wrapper flex_col">
             <div class="footer__logo_row flex_row">
                 <img class="footer__logo_img" src="{{ asset('icons/logo_icon.png') }}" alt="">
