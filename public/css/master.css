@@ -41,6 +41,9 @@ body {
   --banner_text_blue: #0085ff;
   --text_gray: #a3a3a3; }
 
+img {
+  pointer-events: none; }
+
 .flex_row {
   display: flex;
   flex-direction: row; }

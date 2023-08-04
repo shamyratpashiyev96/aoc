@@ -83,7 +83,12 @@ return [
         ],
         'about_us_section' => [
             'title' => 'ABOUT OLYMPIC VILLAGE',
-            'desc' => 'По поручению нашего уважаемого Президента, в нашей стране проведена масштабная работа по развитию физкультурно-оздоровительного движения, массового спорта и спортсменов с высокими достижениями, подготовке туркменских спортсменов к крупным международным соревнованиям, город Ашхабад полностью соответствует международным стандартам, не имеет аналогов во всем регионе и является ярким символом Государственной политики, по обеспечению благополучного и стабильного образа жизни своего народа. Олимпийская деревня стала особым украшением нашего мраморного города, образуя свое неповторимое единство с неповторимой своей красотой и другими объектами спорта и физкультуры, расположенными в нем. В декабре 2017 года была создана Администрация Олимпийского города администрации города Ашхабада.',
+            'desc' => 'On the instructions of our Honorable President, great work was done in our country on physical education and health movement, 
+                        development of high-level athletes and preparation for major international competitions. 
+                        The city of Ashgabat fully meets international standards, has no equal in the entire region and is a clear symbol of the 
+                        State policy to provide the people with a happy and stable life. The Olympic Village, with its unique beauty and uncommon 
+                        unity with other sports and physical education facilities, has become a special decoration of our marble city. 
+                        In December 2017, the Administration of the Olympic City of Ashgabat Municipality was established.',
         ],
         'gallery_section' => 'PHOTOGALLERY',
         'news_section' => 'News',

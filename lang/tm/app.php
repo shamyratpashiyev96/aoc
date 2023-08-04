@@ -82,7 +82,12 @@ return [
         ],
         'about_us_section' => [
             'title' => 'Olimpiýa şäherçesi barada ',
-            'desc' => 'По поручению нашего уважаемого Президента, в нашей стране проведена масштабная работа по развитию физкультурно-оздоровительного движения, массового спорта и спортсменов с высокими достижениями, подготовке туркменских спортсменов к крупным международным соревнованиям, город Ашхабад полностью соответствует международным стандартам, не имеет аналогов во всем регионе и является ярким символом Государственной политики, по обеспечению благополучного и стабильного образа жизни своего народа. Олимпийская деревня стала особым украшением нашего мраморного города, образуя свое неповторимое единство с неповторимой своей красотой и другими объектами спорта и физкультуры, расположенными в нем. В декабре 2017 года была создана Администрация Олимпийского города администрации города Ашхабада.',
+            'desc' => 'Hormatly Prezidentimiziň tabşyrygy boýunça biziň ýurdumyzda bedenterbiýe we saglyk hereketini, köpçülikleýin 
+                        sport we ýokary derejeli türgenleri ösdürmek we iri halkara ýaryşlaryna taýýarlamak üçin uly işler geçirildi. 
+                        Aşgabat şäheri halkara ülňülerine doly laýyk gelýär, tutuş sebitde deňi-taýy ýokdyr we halky abadan we durnukly 
+                        durmuş bilen üpjün etmek boýunça Döwlet syýasatynyň aýdyň nyşanydyr. Olimpiýa şäherçesi, özboluşly gözelligi 
+                        we ondaky beýleki sport we bedenterbiýe desgalary bilen özboluşly bitewiligini emele getirip, mermer şäherimiziň 
+                        aýratyn bezegine öwrüldi. 2017-nji ýylyň dekabrynda Aşgabat şäher häkimliginiň Olimpiýa şäheriniň administrasiýasy döredildi.',
         ],
         'gallery_section' => 'Fotogalereýa',
         'news_section' => 'Habarlar',
