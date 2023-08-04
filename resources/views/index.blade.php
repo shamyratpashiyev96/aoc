@@ -121,17 +121,17 @@
         <div class="gallery__inner_wrapper flex_col">
             <h2 class="gallery__title">@lang('app.main_page.gallery_section')</h2>
             <div class="gallery__images_row flex_row">
-                <img class="small" src="{{ asset('img/gallery_img.png') }}" alt="">
-                <img class="small" src="{{ asset('img/gallery_img.png') }}" alt="">
-                <img class="small" src="{{ asset('img/gallery_img.png') }}" alt="">
-                <img class="small" src="{{ asset('img/gallery_img.png') }}" alt="">
-                <img class="big" src="{{ asset('img/gallery_img.png') }}" alt="">
-                <img class="big" src="{{ asset('img/gallery_img.png') }}" alt="">
-                <img class="big" src="{{ asset('img/gallery_img.png') }}" alt="">
-                <img class="small" src="{{ asset('img/gallery_img.png') }}" alt="">
-                <img class="small" src="{{ asset('img/gallery_img.png') }}" alt="">
-                <img class="small" src="{{ asset('img/gallery_img.png') }}" alt="">
-                <img class="small" src="{{ asset('img/gallery_img.png') }}" alt="">
+                <img class="small" src="{{ asset('img/gallery_1.jpg') }}" alt="">
+                <img class="small" src="{{ asset('img/gallery_2.jpg') }}" alt="">
+                <img class="small" src="{{ asset('img/gallery_3.jpg') }}" alt="">
+                <img class="small" src="{{ asset('img/gallery_4.jpg') }}" alt="">
+                <img class="big" src="{{ asset('img/gallery_5.jpg') }}" alt="">
+                <img class="big" src="{{ asset('img/gallery_6.jpg') }}" alt="">
+                <img class="big" src="{{ asset('img/gallery_7.jpg') }}" alt="">
+                <img class="small" src="{{ asset('img/gallery_8.jpg') }}" alt="">
+                <img class="small" src="{{ asset('img/gallery_9.jpg') }}" alt="">
+                <img class="small" src="{{ asset('img/gallery_10.jpg') }}" alt="">
+                <img class="small" src="{{ asset('img/gallery_11.jpg') }}" alt="">
             </div>
         </div>
     </section>
