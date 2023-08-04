@@ -6,8 +6,7 @@ header {
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 100;
-  position: relative; }
+  z-index: 100; }
   header .header__inner_wrapper {
     width: var(--default_width);
     align-items: center;
