@@ -88,7 +88,7 @@ return [
                         The city of Ashgabat fully meets international standards, has no equal in the entire region and is a clear symbol of the 
                         State policy to provide the people with a happy and stable life. The Olympic Village, with its unique beauty and uncommon 
                         unity with other sports and physical education facilities, has become a special decoration of our marble city. 
-                        In December 2017, the Administration of the Olympic City of Government of Ashgabat was established.',
+                        In December 2017, the Administration of the Olympic Village of Government of Ashgabat was established.',
         ],
         'gallery_section' => 'PHOTOGALLERY',
         'news_section' => 'News',
