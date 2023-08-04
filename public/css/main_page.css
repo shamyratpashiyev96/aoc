@@ -37,22 +37,30 @@ main {
         font-size: 20px; }
     @media (max-width: 1150px) {
       main .main__banner_wrapper .main__upper_layer .main__logo_wrapper_1 {
-        font-size: 35px; } }
+        font-size: 30px;
+        z-index: 1; }
+      main .main__banner_wrapper .main__upper_layer .main__logo_wrapper_2 {
+        top: 30%; } }
     @media (max-width: 799px) {
       main .main__banner_wrapper .main__upper_layer .main__logo_wrapper_1 {
-        font-size: 28px; }
+        font-size: 25px; }
       main .main__banner_wrapper .main__upper_layer .main__logo_wrapper_2 {
-        top: 8%; } }
+        top: 35%; } }
     @media (max-width: 650px) {
       main .main__banner_wrapper .main__upper_layer .main__logo_wrapper_1 {
         font-size: calc(100vw / 25);
-        padding: calc(100vw / 25); }
+        padding: calc(100vw / 25);
+        top: unset;
+        bottom: 16%; }
       main .main__banner_wrapper .main__upper_layer .main__logo_wrapper_2 {
-        top: 1%;
+        top: 50%;
         font-size: 18px; } }
     @media (max-width: 400px) {
       main .main__banner_wrapper .main__upper_layer .main__logo_wrapper_1 {
-        top: 43%; } }
+        bottom: 6%; }
+      main .main__banner_wrapper .main__upper_layer .main__logo_wrapper_2 {
+        top: 60%;
+        font-size: 18px; } }
   main section.flipcards {
     width: 100%;
     margin: 50px 0;
