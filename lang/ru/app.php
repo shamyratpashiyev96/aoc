@@ -90,4 +90,8 @@ return [
         'gallery_section' => 'ФОТОГАЛЕРЕЯ',
         'news_section' => 'Новости',
     ],
+
+    'single_news' => [
+        'related_news' => 'Похожие новости'
+    ]
 ];

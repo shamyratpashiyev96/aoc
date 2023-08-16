@@ -35,12 +35,12 @@
 
             <div class="single_news_page__similar_news_column flex_col">
                 <h2 class="single_news_page__similar_news_block_title">
-                    Похожие новости
+                    @lang('app.single_news.related_news')
                 </h2>
 
                 @foreach ($related_news as $news)
                     <a href="{{ route('single_news_page', ['lang'=>app()->getLocale(), 'id'=> $news->id]) }}" class="single_news_page__similar_news_container flex_col">
-                        <span class="single_news_page__similar_news_date">{{ date('d.m.Y', strtotime($news->created_at)) }}</span>
+                        <span class="single_news_page__similar_news_date">{{ date('d.m.Y', strtotime($news->event_date)) }}</span>
                         <span class="single_news_page__similar_news_title">
                             {{ $news->{'title_' . app()->getLocale()} }}
                         </span>

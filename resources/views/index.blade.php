@@ -152,7 +152,7 @@
                             <div class="description">
                                 {!! $news->{'description_' . app()->getLocale()} !!}
                             </div>
-                            <span class="date">{{ date('d.m.Y', strtotime($news->created_at)) }}</span>
+                            <span class="date">{{ date('d.m.Y', strtotime($news->event_date)) }}</span>
                         </div>
                     </a>
                 @endforeach

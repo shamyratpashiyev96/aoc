@@ -92,4 +92,8 @@ return [
         'gallery_section' => 'Fotogalereýa',
         'news_section' => 'Habarlar',
     ],
+    
+    'single_news' => [
+        'related_news' => 'Meňzeş habarlar'
+    ]
 ];

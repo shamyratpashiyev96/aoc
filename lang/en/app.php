@@ -93,4 +93,8 @@ return [
         'gallery_section' => 'PHOTOGALLERY',
         'news_section' => 'News',
     ],
+
+    'single_news' => [
+        'related_news' => 'Related News'
+    ]
 ];
